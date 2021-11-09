@@ -17,7 +17,24 @@ touch .gitignore
 *.__pycache__ <br />
 *.pyc<br />
 
-5. 
+5. to run the project in an IDE, in terminal type:
+
+python3 manage.py runserver
+
+and expose port 8000
+
+
+6. run migrations:
+
+python3 manage.py migrate
+
+
+7. create a superuser:
+
+python3 manage.py createsuperuser
+
+
+8. 
 
 
 

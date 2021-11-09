@@ -43,7 +43,9 @@ git remote -v
 import os
 
 
-10. 
+10. https://django-allauth.readthedocs.io/en/latest/installation.html
+
+
 
 
 

@@ -2,7 +2,7 @@ INSTALLS (in terminal):
 1. to install django:
 
 pip3 install django
-
+pip3 install django-allauth==0.41.0
 
 2. to create a start project named: ecommerce with the python3 files:
 
@@ -38,7 +38,12 @@ python3 manage.py createsuperuser
 
 git remote -v
 
-9. 
+9. The newest version of Django does not automatically import the os module at the top of the settings.py file. If it does not, then add it to the top of settings.py
+
+import os
+
+
+10. 
 
 
 

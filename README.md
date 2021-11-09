@@ -9,13 +9,13 @@ pip3 install django
 django-admin startproject ecommerce .
 
 
-3. create a basic .gitignore
+3. create a basic .gitignore<br />
 touch .gitignore
 
-4. inside .gitignore type this:
-*.sqlite3
-*.__pycache__
-*.pyc
+4. inside .gitignore type this:<br />
+*.sqlite3 <br />
+*.__pycache__ <br />
+*.pyc<br />
 
 5. 
 

@@ -1,10 +1,23 @@
-INSTALLS:
+INSTALLS (in terminal):
+1. to install django:
 
 pip3 install django
 
 
+2. to create a start project named: ecommerce with the python3 files:
+
+django-admin startproject ecommerce .
 
 
+3. create a basic .gitignore
+touch .gitignore
+
+4. inside .gitignore type this:
+*.sqlite3
+*.__pycache__
+*.pyc
+
+5. 
 
 
 

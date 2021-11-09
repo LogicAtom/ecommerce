@@ -86,6 +86,8 @@ SITE_ID = 1
 # along with django.contrib.sites,
 # needed for social media sites logins like facebook and google etc
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 

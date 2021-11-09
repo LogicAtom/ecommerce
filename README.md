@@ -73,6 +73,10 @@ navigate to /admin:
 https://8000-turquoise-gull-003oak5c.ws-us18.gitpod.io/admin/login/?next=/admin/
 
 
+15. settings.py, add this to temporarily send emails to console to get confirmation links:
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 
 
 

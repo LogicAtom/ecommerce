@@ -46,7 +46,35 @@ import os
 10. https://django-allauth.readthedocs.io/en/latest/installation.html
 
 
-11. 
+11. AUTHENTICATION_BACKENDS = [
+    ...
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+    ...
+]
+
+12. add in settings.py code and urls.py code
+
+
+13. migrate changes:
+
+python3 manage.py migrate
+
+
+14. run the server to test it out:
+
+python3 manage.py runserver
+
+navigate to /admin:
+
+https://8000-turquoise-gull-003oak5c.ws-us18.gitpod.io/admin/login/?next=/admin/
+
+
+
+
 
 
 

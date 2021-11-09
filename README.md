@@ -34,7 +34,11 @@ python3 manage.py migrate
 python3 manage.py createsuperuser
 
 
-8. 
+8. to check git connections:
+
+git remote -v
+
+9. 
 
 
 

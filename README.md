@@ -94,7 +94,18 @@ mkdir templates/allauth
 cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* ./templates/allauth/
 
 
-19. 
+19. create a bunch of blocks with:
+
+{%  %}
+
+inside base.html
+
+20. create a home app:
+
+python3 manage.py startapp home
+
+
+21. 
 
 
 

@@ -177,6 +177,13 @@ urlpatterns = [
 python3 manage.py runserver
 
 
+27. BTW, to stop a server:
+
+hold down CTRL and tap C
+
+this creates a break in any code all the time, shown by a ^C
+
+
 
 
 

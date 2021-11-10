@@ -120,7 +120,30 @@ mkdir -p home/templates/home
 {% endblock %}
 
 
-23. 
+23. from step 22, we need a views to render this into(templates/views.py)
+initially views.py is this:
+
+from django.shortcuts import render
+
+# Create your views here.
+
+
+24. views.py with docstrings added for pep8 compliant
+
+
+""" views.py, for rendering pages """
+from django.shortcuts import render
+
+# Create your views here.
+
+
+def index(request):
+    """ A view to return the index page """
+
+    return render(request, 'home/index.html')
+
+
+
 
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)

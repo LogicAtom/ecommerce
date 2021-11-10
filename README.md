@@ -105,7 +105,9 @@ inside base.html
 python3 manage.py startapp home
 
 
-21. 
+21. create a directory inside the home app (-p = create parents)
+
+mkdir -p home/templates/home
 
 
 

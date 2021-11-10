@@ -83,8 +83,18 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 pip3 freeze > requirements.txt
 
 
-17. 
+17. Set up a templates directory (will hold customized allauth templates)
 
+mkdir templates
+mkdir templates/allauth
+
+
+18. Copy all allauth templates into our templates/auth/ directory
+
+cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* ./templates/allauth/
+
+
+19. 
 
 
 

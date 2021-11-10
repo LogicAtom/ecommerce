@@ -172,7 +172,9 @@ urlpatterns = [
 
 
 
-26. 
+26. Start up the Development Server:
+
+python3 manage.py runserver
 
 
 

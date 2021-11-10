@@ -78,7 +78,12 @@ https://8000-turquoise-gull-003oak5c.ws-us18.gitpod.io/admin/login/?next=/admin/
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
+16. with Redirects working, its time to create a requirements.txt
 
+pip3 freeze > requirements.txt
+
+
+17. 
 
 
 

@@ -110,6 +110,17 @@ python3 manage.py startapp home
 mkdir -p home/templates/home
 
 
+22. Extend base.html into templates/home/index.html, load static file, load content into h1 using BootStrap syntax, to ensure its working:
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h1 class="display-4 text-success"></h1>
+{% endblock %}
+
+
+23. 
 
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)

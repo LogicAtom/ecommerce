@@ -201,13 +201,12 @@ mkdir static/css
 
 +++++++++++++++
 
-pick up tomorrow where i left off The Home Page > Homepage and Top Header Part 2
 
-++++++++++++
+## Fonts, Icons, etc.
 
-my head hurts now ugh.
+Google Fonts = https://fonts.google.com/
 
-___________________
+
 
 
 

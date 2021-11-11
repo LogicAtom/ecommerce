@@ -192,8 +192,14 @@ _______________________________________________________________________
 from psuedo-step 28 on...
 
 mkdir static
-mkdir media
+
+mkdir media 
+<!-- to hold homepage image, and product images, and the place new products go -->
+
 mkdir static/css
+<!-- where CSS, JavaScript, and other static files live -->
+
+
 
 
 

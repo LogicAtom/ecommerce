@@ -199,7 +199,15 @@ mkdir media
 mkdir static/css
 <!-- where CSS, JavaScript, and other static files live -->
 
++++++++++++++++
 
+pick up tomorrow where i left off The Home Page > Homepage and Top Header Part 2
+
+++++++++++++
+
+my head hurts now ugh.
+
+___________________
 
 
 

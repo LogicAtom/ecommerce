@@ -183,6 +183,18 @@ hold down CTRL and tap C
 
 this creates a break in any code all the time, shown by a ^C
 
+28. (psuedo)/not fake, but its the best way i can describe it so as to not have 5billion steps in my project lol. :)
+this step is a bridge to the next sections of my Readme.md as the above steps are learning building blocks, the rest is the actual site.
+_______________________________________________________________________
+
+## Making Directories
+
+from psuedo-step 28 on...
+
+mkdir static
+mkdir media
+mkdir static/css
+
 
 
 

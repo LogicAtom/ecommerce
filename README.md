@@ -215,6 +215,9 @@ To place small HTML Snippets to include in the base template using Django.
 
 mkdir templates/includes
 
+<!-- Fixtures are used to load data very quickly into a Django database -->
+mkdir products/fixtures
+
 
 ### Start App
 

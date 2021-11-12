@@ -228,7 +228,9 @@ python3 manage.py startapp products
 ### Make Migrations
 
 python3 manage.py makemigrations --dry-run
-
+python3 manage.py migrate --plan <!-- --plan flag, to make sure there is nothing wrong with the models -->
+python3 manage.py makemigrations
+python3 manage.py migrate
 
 ### pip3 Installs
 
@@ -239,7 +241,13 @@ pip3 install django-allauth==0.41.0
 pip3 install pillow  <!-- Python Imaging Library for processing images -->
 
 
+### Register Models
 
+from .models import Product, Category
+
+ Register your models here.<br />
+admin.site.register(Product)<br />
+admin.site.register(Category)<br />
 
 
 

@@ -258,7 +258,11 @@ gitpod /workspace/ecommerce $ python3 manage.py loaddata products
    <!-- Installed 172 object(s) from 1 fixture(s) -->
    <!-- 172 products fully loaded with images, categories, names, descriptions, prices, ratings -->
 
+to confirm:
 
+python3 manage.py runserver
+
+add "/admin/" to end of url to enter Django Administration panel
 
 
 

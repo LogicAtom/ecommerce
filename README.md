@@ -205,6 +205,18 @@ mkdir static/css
 ## Fonts, Icons, etc.
 
 Google Fonts = https://fonts.google.com/
+Font Awesome = https://www.fontawesome.com
+
+
+### mkdir
+
+To place small HTML Snippets to include in the base template using Django. 
+
+mkdir templates/includes
+
+
+
+
 
 
 

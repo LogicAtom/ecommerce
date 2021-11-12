@@ -265,7 +265,9 @@ python3 manage.py runserver
 add "/admin/" to end of url to enter Django Administration panel
 
 
+## Acknowledgements and Credits
 
+Code Institute Tutors (Alan) = Django Admin Model, help :) 
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 

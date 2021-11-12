@@ -227,7 +227,7 @@ python3 manage.py startapp products
 
 ### Make Migrations
 
-python3 manage.py makemigrations
+python3 manage.py makemigrations --dry-run
 
 
 

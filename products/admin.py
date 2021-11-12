@@ -14,6 +14,7 @@ class ProductAdmin(admin.ModelAdmin):
         'image',
     )
 
+# Sorting (to reverse it, put a minus symbol in front of sku)
     ordering = ('sku',)
 
 

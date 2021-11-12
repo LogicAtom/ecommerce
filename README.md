@@ -249,6 +249,10 @@ from .models import Product, Category
 admin.site.register(Product)<br />
 admin.site.register(Category)<br />
 
+### Load Data
+
+python3 manage.py loaddata
+
 
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)

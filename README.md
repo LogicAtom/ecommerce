@@ -229,6 +229,7 @@ python3 manage.py startapp products
 
 python3 manage.py makemigrations --dry-run
 python3 manage.py migrate --plan <!-- --plan flag, to make sure there is nothing wrong with the models -->
+<!-- if not using --plan flag, then its best to specify the app for migrations to not accidently migrate from other apps too -->
 python3 manage.py makemigrations
 python3 manage.py migrate
 
@@ -249,9 +250,16 @@ from .models import Product, Category
 admin.site.register(Product)<br />
 admin.site.register(Category)<br />
 
-### Load Data
+### Load Data (to use the fixtures)
 
-python3 manage.py loaddata
+gitpod /workspace/ecommerce $ python3 manage.py loaddata categories
+   <!-- Installed 9 object(s) from 1 fixture(s) -->
+gitpod /workspace/ecommerce $ python3 manage.py loaddata products
+   <!-- Installed 172 object(s) from 1 fixture(s) -->
+   <!-- 172 products fully loaded with images, categories, names, descriptions, prices, ratings -->
+
+
+
 
 
 

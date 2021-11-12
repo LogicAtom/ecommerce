@@ -202,7 +202,7 @@ mkdir static/css
 +++++++++++++++
 
 
-## Fonts, Icons, etc.
+## Additional Services (Fonts, Icons, Datasets, etc.)
 
 Google Fonts = https://fonts.google.com/
 Font Awesome = https://www.fontawesome.com

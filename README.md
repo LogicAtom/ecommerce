@@ -206,6 +206,7 @@ mkdir static/css
 
 Google Fonts = https://fonts.google.com/
 Font Awesome = https://www.fontawesome.com
+Kaggle (free sample data) = https://www.kaggle.com/
 
 
 ### mkdir

@@ -225,6 +225,9 @@ mkdir products/fixtures
 python3 manage.py startapp products
 
 
+### Make Migrations
+
+python3 manage.py makemigrations
 
 
 

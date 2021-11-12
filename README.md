@@ -216,6 +216,10 @@ To place small HTML Snippets to include in the base template using Django.
 mkdir templates/includes
 
 
+### Start App
+
+python3 manage.py startapp products
+
 
 
 

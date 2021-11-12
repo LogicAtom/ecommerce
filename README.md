@@ -233,7 +233,9 @@ python3 manage.py makemigrations --dry-run
 ### pip3 Installs
 
 pip3 install django
+
 pip3 install django-allauth==0.41.0
+
 pip3 install pillow  <!-- Python Imaging Library for processing images -->
 
 

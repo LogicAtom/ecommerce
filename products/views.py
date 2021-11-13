@@ -9,6 +9,7 @@ def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
     products = Product.objects.all()
+    query = None # Start with None to ensure no error when searching with no search term
 # Check if request.get exists, if 'q' is in request then set it as a request called query
     if request.GET:
         if 'q' in request.GET:
@@ -23,6 +24,7 @@ def all_products(request):
 
     context = {
         'products': products,
+        'search_term': query,
     }
 
     return render(request, 'products/products.html', context)

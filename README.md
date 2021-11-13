@@ -1,4 +1,11 @@
-INSTALLS (in terminal):
+## Start and End Points for each day:
+
+Ending today (November 12, 2021. at 7:52pm, confused with too many project variations and versions. Must take a break.)
+
+Start again tomorrow:  (November 13, 2021. Pickup at Project - Ado - Products Setup > Products Template (2:30 in video timeline...at 2:33 things get confusing and I need a whole day to figure it out.))
+
+
+### INSTALLS (in terminal):
 1. to install django:
 
 pip3 install django

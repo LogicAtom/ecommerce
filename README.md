@@ -272,6 +272,11 @@ python3 manage.py runserver
 add "/admin/" to end of url to enter Django Administration panel
 
 
+## External Documentation
+
+Django - Queries = https://docs.djangoproject.com/en/3.2/topics/db/queries/
+
+
 ## Acknowledgements and Credits
 
 Code Institute Tutors (Alan) = Django Admin Model, help :) 

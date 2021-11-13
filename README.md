@@ -279,6 +279,10 @@ add "/admin/" to end of url to enter Django Administration panel
 
 Code Institute Tutors (Alan) = Django Admin Model, help :) 
 
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome LogicAtom,

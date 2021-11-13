@@ -65,7 +65,7 @@
                     <!-- Django code for adjusting columns Math(because col-12) -->
                     {% if forloop.counter|divisibleby:1 %}
                         <!-- Display on Extra-Small Screens (explicit, not-needed as counter always divisible by 1) -->
-                        <div class="col-12 d-sm-none">
+                        <div class="col-12 d-sm-none mb-5"> <!-- mb-5 = margins -->
                             <hr>
                         </div>
                     {% endif %}
@@ -74,7 +74,7 @@
                     <!-- Render every 2 columns -->
                     {% if forloop.counter|divisibleby:2 %}
                         <!-- Display on Small and Medium Screens. Hide on Larger+ -->
-                        <div class="col-12 d-none d-sm-block d-md-block d-lg-none">
+                        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
                             <hr>
                         </div>
                     {% endif %}
@@ -83,7 +83,7 @@
                     <!-- Render every 3 columns -->
                     {% if forloop.counter|divisibleby:3 %}
                         <!-- Display on Large Screens. Hide on Small and Medium Screens -->
-                        <div class="col-12 d-none d-lg-block d-xl-none">
+                        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
                             <hr>
                         </div>
                     {% endif %}
@@ -92,7 +92,7 @@
                     <!-- Render every 4 columns -->
                     {% if forloop.counter|divisibleby:4 %}
                         <!-- Display on Extra Large Screens. Hide on Small and Medium Screens -->
-                        <div class="col-12 d-none d-xl-block">
+                        <div class="col-12 d-none d-xl-block mb-5">
                             <hr>
                         </div>
                     {% endif %}

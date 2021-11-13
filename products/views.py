@@ -11,7 +11,9 @@ def all_products(request):
     products = Product.objects.all()
     query = None # Start with None to ensure no error when searching with no search term
 # Check if request.get exists, if 'q' is in request then set it as a request called query
+    category = None # Capture the category parameter
     if request.GET:
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query: # if query is blank then it wont return any results

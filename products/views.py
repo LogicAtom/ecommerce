@@ -16,6 +16,10 @@ def all_products(request):
             if not query: # if query is blank then it wont return any results
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
+            # Constructing queries
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            # Pass queries to a filter
+            products = products.filter(queries)
 
     context = {
         'products': products,

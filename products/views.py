@@ -14,7 +14,7 @@ def all_products(request):
     query = None
 # Check if request.get exists, if 'q' is
 # in request then set it as a request called query
-    category = None  # Capture the category parameter
+    categories = None  # Capture the category parameter
 
     if request.GET:
         if 'category' in request.GET:

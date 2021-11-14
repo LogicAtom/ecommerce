@@ -15,8 +15,21 @@ def all_products(request):
 # Check if request.get exists, if 'q' is
 # in request then set it as a request called query
     categories = None  # Capture the category parameter
+    sort = None
+    direction = None
+
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name': 
+                sortkey = 'lower_name'
+                # Create annotation to change all letters to lowercase
+                products = products.annotate(lower_name=Lower('name'))
+
+            if 'direction' in request.GET:
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)

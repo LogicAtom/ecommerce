@@ -26,7 +26,8 @@ def all_products(request):
                 sortkey = 'lower_name' # Changed sortkey to lower_name
                 # Create annotation to change all letters to lowercase
                 products = products.annotate(lower_name=Lower('name'))
-
+            if sortkey == 'category':
+                sortkey = 'category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc': # Check if direction is descending

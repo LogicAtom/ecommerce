@@ -73,6 +73,7 @@ body {
 
 a.category-badge>span.badge:hover {
     background: #212529 !important;
+    /* this background color matches bootstrap 'dark' class */
     color: #fff !important;
 }
 

@@ -277,6 +277,31 @@ add "/admin/" to end of url to enter Django Administration panel
 Django - Queries = https://docs.djangoproject.com/en/3.2/topics/db/queries/
 
 
+### Bootstrap Elements
+    text-decoration-none
+
+    p-2
+
+    mt-2
+
+    badge
+
+    badge-white
+
+    rounded-0
+
+    border
+
+    border-dark
+
+
+### Non-Bootstrap Elements which work with bootstrap
+
+    category-badge
+
+    text-black
+
+
 ## Acknowledgements and Credits
 
 Code Institute Tutors (Alan) = Django Admin Model, help :) 

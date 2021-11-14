@@ -232,6 +232,10 @@ mkdir -p products/templates/products
 python3 manage.py startapp products
 
 
+### Create New Apps
+
+python3 manage.py startapp bag
+
 ### Make Migrations
 
 python3 manage.py makemigrations --dry-run

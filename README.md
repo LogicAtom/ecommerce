@@ -301,6 +301,10 @@ Django - Queries = https://docs.djangoproject.com/en/3.2/topics/db/queries/
 
     text-black
 
+    .btt-button
+
+    .btt-link
+
 
 ## Acknowledgements and Credits
 

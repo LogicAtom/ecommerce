@@ -312,7 +312,7 @@ Django - Queries = https://docs.djangoproject.com/en/3.2/topics/db/queries/
 
 ## Acknowledgements and Credits
 
-Code Institute Tutors (Alan) = Django Admin Model, help :) 
-
+Code Institute Tutors (Alan) = Django Admin Model, help :) <br />
+Code Institute Tutors (Ed) = Django and Site Views and Templates, help :) 
 
 App Coder = Anthony Kozloski

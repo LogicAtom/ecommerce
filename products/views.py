@@ -23,18 +23,20 @@ def all_products(request):
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-            if sortkey == 'name': # Original sortkey is name(dont want to lose original field name)
-                sortkey = 'lower_name' # Changed sortkey to lower_name
+            # Original sortkey is name(dont want to lose original field name)
+            if sortkey == 'name':
+                sortkey = 'lower_name'  # Changed sortkey to lower_name
                 # Create annotation to change all letters to lowercase
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
-                if direction == 'desc': # Check if direction is descending
-                    sortkey = f'-{sortkey}' # String notation to reverse the formatting
+                if direction == 'desc':  # Check if direction is descending
+                    # String notation to reverse the formatting
+                    sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-                    
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)

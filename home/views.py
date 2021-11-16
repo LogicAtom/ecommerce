@@ -4,7 +4,7 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def view_bag(request):
-    """ A view that renders the bag contents page """
+def index(request):
+    """ A view that renders the home page """
 
-    return render(request, 'bag/bag.html')
+    return render(request, 'home/index.html')

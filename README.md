@@ -236,6 +236,9 @@ python3 manage.py startapp products
 
 python3 manage.py startapp bag
 
+python3 manage.py startapp checkout
+
+
 ### Make Migrations
 
 python3 manage.py makemigrations --dry-run

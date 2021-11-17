@@ -1,3 +1,4 @@
+""" docstring for bag>contexts.py """
 # decimal is accurate, do not use float because it rounds off
 from decimal import Decimal
 from django.conf import settings

@@ -247,6 +247,12 @@ python3 manage.py migrate --plan <!-- --plan flag, to make sure there is nothing
 python3 manage.py makemigrations<br />
 python3 manage.py migrate<br />
 
+
+### Errors, bugs, fixes
+
+Commenting out code in most of these files will still give errors for the most part. The only way to fix that is to cut the code out and temporarily paste the code into a notepad file.
+
+
 ### pip3 Installs
 
 pip3 install django

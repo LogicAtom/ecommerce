@@ -241,11 +241,11 @@ python3 manage.py startapp checkout
 
 ### Make Migrations
 
-python3 manage.py makemigrations --dry-run
-python3 manage.py migrate --plan <!-- --plan flag, to make sure there is nothing wrong with the models -->
+python3 manage.py makemigrations --dry-run<br />
+python3 manage.py migrate --plan <!-- --plan flag, to make sure there is nothing wrong with the models --><br />
 <!-- if not using --plan flag, then its best to specify the app for migrations to not accidently migrate from other apps too -->
-python3 manage.py makemigrations
-python3 manage.py migrate
+python3 manage.py makemigrations<br />
+python3 manage.py migrate<br />
 
 ### pip3 Installs
 

@@ -253,6 +253,13 @@ python3 manage.py migrate<br />
 Commenting out code in most of these files will still give errors for the most part. The only way to fix that is to cut the code out and temporarily paste the code into a notepad file.
 
 
+### Special files
+
+contexts.py<br />
+Uses context processors to be available to all templates, and all files, across the entire project.<br />
+
+
+
 ### pip3 Installs
 
 pip3 install django

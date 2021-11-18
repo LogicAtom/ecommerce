@@ -258,6 +258,19 @@ Commenting out code in most of these files will still give errors for the most p
 contexts.py<br />
 Uses context processors to be available to all templates, and all files, across the entire project.<br />
 
+`${itemId}` = template literal
+
+{{ csrf_token }} = template variable, renders the actual token.
+<br />
+{{% csrf_token %}} = template tag, renders a hidden input field in a form.
+<br />
+remove_ = underscore is to be very explicit.
+<br />
+var size = $(this).data('size'); = use the data method to pull it from the data size attribute.(bag.html, near the bottom of the page)<br />
+
+__________
+google research: using data attributes in html elements.
+
 
 
 ### pip3 Installs

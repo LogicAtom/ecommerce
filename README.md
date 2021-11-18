@@ -255,6 +255,10 @@ Commenting out code in most of these files will still give errors for the most p
 
 ### Special files
 
+
+signals.py = Django includes a “signal dispatcher” which helps decoupled applications get notified when actions occur elsewhere in the framework.<br />
+https://docs.djangoproject.com/en/3.2/topics/signals/
+<br />
 bag.pop(item_id) = .pop function, to remove the item entirely.
 <br />
 return redirect(reverse('view_bag')) = redirect back to the view_bag using the reverse function. make sure to import reverse at the top of whatever file you use it.
@@ -324,6 +328,11 @@ to confirm:
 python3 manage.py runserver
 
 add "/admin/" to end of url to enter Django Administration panel
+
+
+### Testing
+
+Selenium
 
 
 ## External Documentation

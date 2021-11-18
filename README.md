@@ -256,7 +256,7 @@ Commenting out code in most of these files will still give errors for the most p
 ### Special files
 
 
-signals.py = Django includes a “signal dispatcher” which helps decoupled applications get notified when actions occur elsewhere in the framework.<br />
+signals.py = (keeps track of OrderLineItem each time an item is added or updated)., Django includes a “signal dispatcher” which helps decoupled applications get notified when actions occur elsewhere in the framework.<br />
 https://docs.djangoproject.com/en/3.2/topics/signals/
 <br />
 bag.pop(item_id) = .pop function, to remove the item entirely.

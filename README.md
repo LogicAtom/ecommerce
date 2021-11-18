@@ -284,6 +284,8 @@ google research: using data attributes in html elements.<br />
 ___________<br />
 slim version of javascript libraries = does NOT include the various Ajax functions like POST.(use minified versions instead).<br />
 <code>__init__.py</code> = used to ensure that the directory is treated as a Python package., to make a module available for imports and to use in templates.<br />
+toasts = Bootstrap notifications<br />
+{{ block.super }} = used when overriding the post loadjs block., by doing that, it ensures that the Javascript written in the templates that extend to the base.html wont overwrite this call to show all the toasts.
 
 
 ### Dictionaries

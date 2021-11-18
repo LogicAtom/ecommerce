@@ -269,7 +269,7 @@ except Exception as e:              = to catch any exceptions (variable e)
 contexts.py<br />
 Uses context processors to be available to all templates, and all files, across the entire project.<br />
 
-`${itemId}` = template literal
+<code>`${itemId}`</code> = template literal
 
 {{ csrf_token }} = template variable, renders the actual token.
 <br />
@@ -279,13 +279,16 @@ remove_ = underscore is to be very explicit.
 <br />
 var size = $(this).data('size'); = use the data method to pull it from the data size attribute.(bag.html, near the bottom of the page)<br />
 
-__________
-google research: using data attributes in html elements.
+__________<br />
+google research: using data attributes in html elements.<br />
+___________<br />
+slim version of javascript libraries = does NOT include the various Ajax functions like POST.(use minified versions instead).<br />
+<code>__init__.py</code> = used to ensure that the directory is treated as a Python package., to make a module available for imports and to use in templates.<br />
 
 
 ### Dictionaries
 
-['items_by_size']<br />
+<code>['items_by_size']</code><br />
 from bag>views.py
 
 

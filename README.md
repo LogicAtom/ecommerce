@@ -255,9 +255,14 @@ Commenting out code in most of these files will still give errors for the most p
 
 ### Special files
 
-bag.pop[item_id] = .pop function, to remove the item entirely.
+bag.pop(item_id) = .pop function, to remove the item entirely.
 <br />
-return redirect(reverse('view_bag')) = redirect back to the view_bag using the reverse function.
+return redirect(reverse('view_bag')) = redirect back to the view_bag using the reverse function. make sure to import reverse at the top of whatever file you use it.
+<br />
+return HttpResponse(status=200) = used to return a status code 200(OK) for using posting to from a Javascript function. make sure to import HttpResponse.
+<br />
+except Exception as e:              = to catch any exceptions (variable e)
+    return HttpResponse(status=500) = used to return a server error, in case anything goes wrong. make sure to import HttpResponse.
 <br />
 .session = cookies
 <br />

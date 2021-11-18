@@ -255,6 +255,12 @@ Commenting out code in most of these files will still give errors for the most p
 
 ### Special files
 
+bag.pop[item_id] = .pop function, to remove the item entirely.
+<br />
+return redirect(reverse('view_bag')) = redirect back to the view_bag using the reverse function.
+<br />
+.session = cookies
+<br />
 contexts.py<br />
 Uses context processors to be available to all templates, and all files, across the entire project.<br />
 
@@ -271,6 +277,11 @@ var size = $(this).data('size'); = use the data method to pull it from the data 
 __________
 google research: using data attributes in html elements.
 
+
+### Dictionaries
+
+['items_by_size']<br />
+from bag>views.py
 
 
 ### pip3 Installs

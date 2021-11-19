@@ -1,8 +1,10 @@
 # Full-Stack Frameworks with Django
-E-Commerce Website
+
+**E-Commerce Website**
 
 
 ### INSTALLS (in terminal):
+
 1. to install django:
 
 pip3 install django
@@ -17,9 +19,15 @@ django-admin startproject ecommerce .
 touch .gitignore
 
 4. inside .gitignore type this:<br />
-*.sqlite3 <br />
-*.__pycache__ <br />
-*.pyc<br />
+
+
+`` *.sqlite3 ``
+
+`` *.__pycache__ ``
+
+`` *.pyc ``
+
+<br />
 
 5. to run the project in an IDE, in terminal type:
 
@@ -129,7 +137,7 @@ initially views.py is this:
 
 from django.shortcuts import render
 
-### Create your views here.
+##### Create your views here.
 
 
 24. views.py with docstrings added for pep8 compliant
@@ -138,7 +146,7 @@ from django.shortcuts import render
 """ views.py, for rendering pages """
 from django.shortcuts import render
 
-### Create your views here.
+##### Create your views here.
 
 
 def index(request):
@@ -190,6 +198,7 @@ this creates a break in any code all the time, shown by a ^C
 28. (psuedo)/not fake, but its the best way i can describe it so as to not have 5billion steps in my project lol. :)
 this step is a bridge to the next sections of my Readme.md as the above steps are learning building blocks, the rest is the actual site.
 _______________________________________________________________________
+<br /><br />
 
 ## Making Directories
 
@@ -204,15 +213,16 @@ mkdir static/css
 <!-- where CSS, JavaScript, and other static files live -->
 
 +++++++++++++++
-
+<br /><br />
 
 ## Additional Services (Fonts, Icons, Datasets, etc.)
 
-Google Fonts = https://fonts.google.com/
-Font Awesome = https://www.fontawesome.com
-Kaggle (free sample data) = https://www.kaggle.com/
-JSON Formatter = https://jsonformatter.org/
+Google Fonts = https://fonts.google.com/<br />
+Font Awesome = https://www.fontawesome.com<br />
+Kaggle (free sample data) = https://www.kaggle.com/<br />
+JSON Formatter = https://jsonformatter.org/<br />
 
+<br /><br />
 
 ## mkdir
 
@@ -226,6 +236,7 @@ mkdir products/fixtures
 <!-- create inner products folder so Django knows which app this belongs to -->
 mkdir -p products/templates/products
 
+<br /><br />
 
 ## Start App
 
@@ -238,6 +249,7 @@ python3 manage.py startapp bag
 
 python3 manage.py startapp checkout
 
+<br /><br />
 
 ## Make Migrations
 
@@ -246,12 +258,12 @@ python3 manage.py migrate --plan <!-- --plan flag, to make sure there is nothing
 <!-- if not using --plan flag, then its best to specify the app for migrations to not accidently migrate from other apps too -->
 python3 manage.py makemigrations<br />
 python3 manage.py migrate<br />
-
+<br /><br />
 
 ## Errors, bugs, fixes
 
 Commenting out code in most of these files will still give errors for the most part. The only way to fix that is to cut the code out and temporarily paste the code into a notepad file.
-
+<br /><br />
 
 ## Special files
 
@@ -291,16 +303,18 @@ slim version of javascript libraries = does NOT include the various Ajax functio
 <code>__init__.py</code> = used to ensure that the directory is treated as a Python package., to make a module available for imports and to use in templates.<br />
 toasts = Bootstrap notifications<br />
 {{ block.super }} = used when overriding the post loadjs block., by doing that, it ensures that the Javascript written in the templates that extend to the base.html wont overwrite this call to show all the toasts.
-
+<br /><br />
 
 ## Dictionaries
 
 <code>['items_by_size']</code><br />
 from bag>views.py
+<br /><br />
 
 
-## pip3 Installs
+## PIP3 INSTALLS  
 
+ 
 pip3 install django
 
 
@@ -310,9 +324,30 @@ pip3 install django-allauth==0.41.0
 pip3 install pillow  <!-- Python Imaging Library for processing images -->
 
 
-pip3 install django-crispy-forms <!-- Allows formatting of all the forms using bootstrap styling automatically. Simple setup, just add     'crispy-forms' into the installed apps in settings.py, and    CRISPY_TEMPLATE_PACK = 'bootstrap4'    also in settings.py -->
+pip3 install django-crispy-forms 
+ <!-- Allows formatting of all the forms using bootstrap styling automatically. Simple setup, just add     'crispy-forms' into the installed apps in settings.py, and    CRISPY_TEMPLATE_PACK = 'bootstrap4'    also in settings.py -->
+ <!-- this goes in settings.py too right under 'context_processors section' -->
 
-
+<br />
+    <code>
+        'builtins': [
+            'crispy_forms.templatetags.crispy_forms_tags',
+            'crispy_forms.templatetags.crispy_forms_field',
+        ]
+    </code>
+<br />
+"""
+Which will give us access to everything we need from crispy forms across all templates by default.
+"""
+<br /><br />
+    <code>
+        pip3 freeze > requirements.txt
+    </code>
+<br />
+"""
+Freeze the new requirements to make sure we have crispy forms in there as well as pillow.
+"""
+<br /><br /><br />
 
 ## Register Models
 
@@ -321,6 +356,7 @@ from .models import Product, Category
  Register your models here.<br />
 admin.site.register(Product)<br />
 admin.site.register(Category)<br />
+<br /><br />
 
 ## Load Data (to use the fixtures)
 
@@ -335,12 +371,12 @@ to confirm:
 python3 manage.py runserver
 
 add "/admin/" to end of url to enter Django Administration panel
-
+<br /><br />
 
 ## Testing
 
 Selenium
-
+<br /><br />
 
 ## Preventative Measures
 
@@ -352,13 +388,13 @@ def checkout(request):<br />
         messages.error(request, "There's nothing in your bag at the moment")<br />
         return redirect(reverse('products'))<br />
 </code>
-
+<br /><br />
 
 
 ## External Documentation
 
 Django - Queries = https://docs.djangoproject.com/en/3.2/topics/db/queries/
-
+<br /><br />
 
 ### Bootstrap Elements
     text-decoration-none
@@ -377,6 +413,7 @@ Django - Queries = https://docs.djangoproject.com/en/3.2/topics/db/queries/
 
     border-dark
 
+<br /><br />
 
 ### Non-Bootstrap Elements which work with bootstrap
 
@@ -388,10 +425,11 @@ Django - Queries = https://docs.djangoproject.com/en/3.2/topics/db/queries/
 
     .btt-link
 
+<br /><br />
 
 ## Acknowledgements and Credits
 
 Code Institute Tutors (Alan) = Django Admin Model and Project Migrations.  :) <br />
 Code Institute Tutors (Ed) = Django and Site Views and Templates.  :) 
-
+<br /><br />
 App Coder = Anthony Kozloski

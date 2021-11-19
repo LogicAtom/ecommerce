@@ -214,7 +214,7 @@ Kaggle (free sample data) = https://www.kaggle.com/
 JSON Formatter = https://jsonformatter.org/
 
 
-### mkdir
+## mkdir
 
 To place small HTML Snippets to include in the base template using Django. 
 
@@ -227,19 +227,19 @@ mkdir products/fixtures
 mkdir -p products/templates/products
 
 
-### Start App
+## Start App
 
 python3 manage.py startapp products
 
 
-### Create New Apps
+## Create New Apps
 
 python3 manage.py startapp bag
 
 python3 manage.py startapp checkout
 
 
-### Make Migrations
+## Make Migrations
 
 python3 manage.py makemigrations --dry-run<br />
 python3 manage.py migrate --plan <!-- --plan flag, to make sure there is nothing wrong with the models --><br />
@@ -248,12 +248,12 @@ python3 manage.py makemigrations<br />
 python3 manage.py migrate<br />
 
 
-### Errors, bugs, fixes
+## Errors, bugs, fixes
 
 Commenting out code in most of these files will still give errors for the most part. The only way to fix that is to cut the code out and temporarily paste the code into a notepad file.
 
 
-### Special files
+## Special files
 
 
 signals.py = (keeps track of OrderLineItem each time an item is added or updated)., Django includes a “signal dispatcher” which helps decoupled applications get notified when actions occur elsewhere in the framework.<br />Admin, Signals & Forms Part 1 of CI lesson.
@@ -293,13 +293,13 @@ toasts = Bootstrap notifications<br />
 {{ block.super }} = used when overriding the post loadjs block., by doing that, it ensures that the Javascript written in the templates that extend to the base.html wont overwrite this call to show all the toasts.
 
 
-### Dictionaries
+## Dictionaries
 
 <code>['items_by_size']</code><br />
 from bag>views.py
 
 
-### pip3 Installs
+## pip3 Installs
 
 pip3 install django
 
@@ -308,7 +308,7 @@ pip3 install django-allauth==0.41.0
 pip3 install pillow  <!-- Python Imaging Library for processing images -->
 
 
-### Register Models
+## Register Models
 
 from .models import Product, Category
 
@@ -316,7 +316,7 @@ from .models import Product, Category
 admin.site.register(Product)<br />
 admin.site.register(Category)<br />
 
-### Load Data (to use the fixtures)
+## Load Data (to use the fixtures)
 
 gitpod /workspace/ecommerce $ python3 manage.py loaddata categories
    <!-- Installed 9 object(s) from 1 fixture(s) -->
@@ -331,9 +331,22 @@ python3 manage.py runserver
 add "/admin/" to end of url to enter Django Administration panel
 
 
-### Testing
+## Testing
 
 Selenium
+
+
+## Preventative Measures
+
+To prevent people from manually accessing the URL by typing /checkout, use the below code in, checkout>views.py (checkout/views.py):<br />
+<code>
+def checkout(request):<br />
+    bag = request.session.get('bag', {})<br />
+    if not bag:<br />
+        messages.error(request, "There's nothing in your bag at the moment")<br />
+        return redirect(reverse('products'))<br />
+</code>
+
 
 
 ## External Documentation

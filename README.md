@@ -129,7 +129,7 @@ initially views.py is this:
 
 from django.shortcuts import render
 
-# Create your views here.
+### Create your views here.
 
 
 24. views.py with docstrings added for pep8 compliant
@@ -138,7 +138,7 @@ from django.shortcuts import render
 """ views.py, for rendering pages """
 from django.shortcuts import render
 
-# Create your views here.
+### Create your views here.
 
 
 def index(request):
@@ -303,9 +303,15 @@ from bag>views.py
 
 pip3 install django
 
+
 pip3 install django-allauth==0.41.0
 
+
 pip3 install pillow  <!-- Python Imaging Library for processing images -->
+
+
+pip3 install django-crispy-forms <!-- Allows formatting of all the forms using bootstrap styling automatically. Simple setup, just add     'crispy-forms' into the installed apps in settings.py, and    CRISPY_TEMPLATE_PACK = 'bootstrap4'    also in settings.py -->
+
 
 
 ## Register Models

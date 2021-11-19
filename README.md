@@ -358,6 +358,54 @@ admin.site.register(Product)<br />
 admin.site.register(Category)<br />
 <br /><br />
 
+
+## CODE MAP
+
+<table border="1px solid #595959">
+    <thead>
+        <tr>
+            <td>FRIENDLY NAME</td>
+            <td>INFORMATION</td>
+            <td>ELEMENT</td>
+            <td>METHOD</td>
+            <td>DIRECTORY</td>
+            <td>FILE</td>        
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Complete Order</td>
+            <td>JS order submit</td>
+            <td>BUTTON</td>
+            <td>ID="submit-button"</td>
+            <td>templates/checkout/</td>
+            <td>checkout.html</td>
+        </tr>
+        <tr>
+            <td>Adjust Bag</td>
+            <td>Shopping Bag</td>
+            <td>LINK</td>
+            <td>a href=url 'view_bag'</td>
+            <td>templates/checkout/</td>
+            <td>checkout.html</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+        </tr>
+    </tfoot>
+</table>
+
+
+<br /><br />
+
+
 ## Load Data (to use the fixtures)
 
 gitpod /workspace/ecommerce $ python3 manage.py loaddata categories

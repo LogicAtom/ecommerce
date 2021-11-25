@@ -92,7 +92,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 16. with Redirects working, its time to create a requirements.txt
 
-<p><bold>pip3 freeze > requirements.txt</bold></p>
+<b>pip3 freeze > requirements.txt</b>
 
 
 17. Set up a templates directory (will hold customized allauth templates)

@@ -221,6 +221,8 @@ Google Fonts = https://fonts.google.com/<br />
 Font Awesome = https://www.fontawesome.com<br />
 Kaggle (free sample data) = https://www.kaggle.com/<br />
 JSON Formatter = https://jsonformatter.org/<br />
+Temp Email = https://temp-mail.org/en/<br />
+Stripe = https://stripe.com<br />
 
 <br /><br />
 

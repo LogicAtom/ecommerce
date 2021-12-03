@@ -252,7 +252,7 @@ python3 manage.py startapp profiles
 
 <br /><br />
 
-
+profiles app, models.py, null=true, blank=true (means the fields are optional for the user)
 
 
 ## Make Migrations

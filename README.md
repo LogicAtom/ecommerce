@@ -361,6 +361,11 @@ admin.site.register(Category)<br />
 <br /><br />
 
 
+## Webhooks
+
+webhooks are like the Django models each time a model is saved or deleted.
+except they are sent securely from Stripe to a URL we specify.
+
 ## CODE MAP
 
 <table border="1px solid #595959">
@@ -478,6 +483,16 @@ Django - Queries = https://docs.djangoproject.com/en/3.2/topics/db/queries/
     .btt-link
 
 <br /><br />
+
+## ERROR Definitions
+
+Pascal case -- or PascalCase -- is a programming naming convention where the first letter of each compound word in a variable is capitalized. No spaces used, including _underscores.
+<br />
+example:  class StripeWH_Handler: 
+<br />
+changed to:  class StripeWHHandler:   is fine, but I am changing it to make it more obvious of what it is exactly.
+<br />
+changed to:  class StripeWebHookHandler:    
 
 ## Acknowledgements and Credits
 

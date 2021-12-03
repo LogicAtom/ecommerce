@@ -374,50 +374,6 @@ admin.site.register(Category)<br />
 webhooks are like the Django models each time a model is saved or deleted.
 except they are sent securely from Stripe to a URL we specify.
 
-## CODE MAP
-
-<table border="1px solid #595959">
-    <thead>
-        <tr>
-            <td>FRIENDLY NAME</td>
-            <td>INFORMATION</td>
-            <td>ELEMENT</td>
-            <td>METHOD</td>
-            <td>DIRECTORY</td>
-            <td>FILE</td>        
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Complete Order</td>
-            <td>JS order submit</td>
-            <td>BUTTON</td>
-            <td>ID="submit-button"</td>
-            <td>templates/checkout/</td>
-            <td>checkout.html</td>
-        </tr>
-        <tr>
-            <td>Adjust Bag</td>
-            <td>Shopping Bag</td>
-            <td>LINK</td>
-            <td>a href=url 'view_bag'</td>
-            <td>templates/checkout/</td>
-            <td>checkout.html</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-           <td></td>
-        </tr>
-    </tfoot>
-</table>
-
-
 <br /><br />
 
 create a superuser:
@@ -515,7 +471,7 @@ in webhooks.py, import StripeWH_Handler, changed to StripeWebHookHandler, change
 #### ADDITIONAL RESOURCES/REFERENCES
 
 1. Safety and Security Information for everyday coding - https://cwe.mitre.org/data/definitions/601.html
-2. 
+2. profiles app didn't automatically make a urls.py file, so you must add it manually.
 
 ## Acknowledgements and Credits
 

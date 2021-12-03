@@ -247,6 +247,9 @@ python3 manage.py startapp bag
 
 python3 manage.py startapp checkout
 
+python3 manage.py startapp profiles
+
+
 <br /><br />
 
 

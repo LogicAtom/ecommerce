@@ -437,7 +437,7 @@ add "/admin/" to end of url to enter Django Administration panel
 
 ## Testing
 
-Selenium
+
 <br /><br />
 
 ## Preventative Measures
@@ -501,7 +501,15 @@ changed to:  class StripeWHHandler:   is fine, but I am changing it to make it m
 <br />
 changed to:  class StripeWebHookHandler: 
 <br />
-in webhooks.py, import StripeWH_Handler, changed to StripeWebHookHandler
+in webhooks.py, import StripeWH_Handler, changed to StripeWebHookHandler, changed back
+
+### SECURITY FEATURES
+
+
+#### ADDITIONAL RESOURCES/REFERENCES
+
+1. Safety and Security Information for everyday coding - https://cwe.mitre.org/data/definitions/601.html
+2. 
 
 ## Acknowledgements and Credits
 

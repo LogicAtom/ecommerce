@@ -4,7 +4,7 @@ django HttpResponse
 from django.http import HttpResponse
 
 
-class StripeWebHookHandler:
+class StripeWH_Handler:
     """Handle Stripe webhooks"""
 
     def __init__(self, request):

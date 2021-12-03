@@ -332,6 +332,9 @@ pip3 install django-crispy-forms
  <!-- Allows formatting of all the forms using bootstrap styling automatically. Simple setup, just add     'crispy-forms' into the installed apps in settings.py, and    CRISPY_TEMPLATE_PACK = 'bootstrap4'    also in settings.py -->
  <!-- this goes in settings.py too right under 'context_processors section' -->
 
+pip3 install django-countries
+<!-- used in checkout app, models.py, so the Country field can auto-populate as a drop-down menu -->
+
 <br />
     <code>
         'builtins': [

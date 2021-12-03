@@ -195,14 +195,10 @@ hold down CTRL and tap C
 
 this creates a break in any code all the time, shown by a ^C
 
-28. (psuedo)/not fake, but its the best way i can describe it so as to not have 5billion steps in my project lol. :)
-this step is a bridge to the next sections of my Readme.md as the above steps are learning building blocks, the rest is the actual site.
 _______________________________________________________________________
 <br /><br />
 
 ## Making Directories
-
-from psuedo-step 28 on...
 
 mkdir static
 
@@ -253,6 +249,9 @@ python3 manage.py startapp checkout
 
 <br /><br />
 
+
+
+
 ## Make Migrations
 
 python3 manage.py makemigrations --dry-run<br />
@@ -261,6 +260,9 @@ python3 manage.py migrate --plan <!-- --plan flag, to make sure there is nothing
 python3 manage.py makemigrations<br />
 python3 manage.py migrate<br />
 <br /><br />
+
+
+
 
 ## Errors, bugs, fixes
 
@@ -412,6 +414,11 @@ except they are sent securely from Stripe to a URL we specify.
 
 <br /><br />
 
+create a superuser:
+
+python3 manage.py createsuperuser
+
+<br /><br />
 
 ## Load Data (to use the fixtures)
 
@@ -492,7 +499,9 @@ example:  class StripeWH_Handler:
 <br />
 changed to:  class StripeWHHandler:   is fine, but I am changing it to make it more obvious of what it is exactly.
 <br />
-changed to:  class StripeWebHookHandler:    
+changed to:  class StripeWebHookHandler: 
+<br />
+in webhooks.py, import StripeWH_Handler, changed to StripeWebHookHandler
 
 ## Acknowledgements and Credits
 

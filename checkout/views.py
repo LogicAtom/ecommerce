@@ -1,15 +1,18 @@
-import json
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse
 )
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
-import stripe
-from products.models import Product
-from bag.contexts import bag_contents
+
 from .forms import OrderForm
 from .models import Order, OrderLineItem
+
+from products.models import Product
+from bag.contexts import bag_contents
+
+import stripe
+import json
 
 
 @require_POST
@@ -83,6 +86,29 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
+
+            # Save the info to the user's profile if all is well
+            request.session['save_info'] = 'save-info' in request.POST
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
+        else:
+            messages.error(request, ('There was an error with your form. '
+                                     'Please double check your information.'))
+    else:
+        bag = request.session.get('bag', {})
+        if not bag:
+            messages.error(request,
+                           "There's nothing in your bag at the moment")
+            return redirect(reverse('products'))
+
+        current_bag = bag_contents(request)
+        total = current_bag['grand_total']
+        stripe_total = round(total * 100)
+        stripe.api_key = stripe_secret_key
+        intent = stripe.PaymentIntent.create(
+            amount=stripe_total,
+            currency=settings.STRIPE_CURRENCY,
+        )
 
         current_bag = bag_contents(request)
         total = current_bag['grand_total']

@@ -1,5 +1,5 @@
 """
-ASGI config for boutique_ado project.
+ASGI config for ECommerce project.
 It exposes the ASGI callable as a module-level variable named ``application``.
 For more information on this file, see
 https://docs.djangoproject.com/en/3.0/howto/deployment/asgi/

@@ -485,6 +485,18 @@ profiles > apps.py = django.db.models.BigAutoField
 2. profiles app didn't automatically make a urls.py file, so you must add it manually.
 3. JSON Formatter - https://jsonformatter.org/
 
+#### DEPLOYMENT
+Heroku 
+create your app, then choose Resources, then in addons: type in postgres, choose Hobby free,
+
+then in GitPod, 
+
+pip3 install dj_database_url
+pip3 install psycopg2-binary
+pip3 freeze > requirements.txt
+
+
+
 ## Acknowledgements and Credits
 
 Code Institute Tutors (Alan) = Django Admin Model and Project Migrations.  :) <br />

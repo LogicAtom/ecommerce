@@ -483,6 +483,7 @@ profiles > apps.py = django.db.models.BigAutoField
 
 1. Safety and Security Information for everyday coding - https://cwe.mitre.org/data/definitions/601.html
 2. profiles app didn't automatically make a urls.py file, so you must add it manually.
+3. JSON Formatter - https://jsonformatter.org/
 
 ## Acknowledgements and Credits
 

@@ -474,6 +474,7 @@ python3 manage.py migrate --plan <!-- --plan flag, to make sure there is nothing
 python3 manage.py migrate<br />
 <br /><br />
 
+profiles > apps.py = django.db.models.BigAutoField
 
 ### SECURITY FEATURES
 

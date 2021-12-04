@@ -382,14 +382,6 @@ python3 manage.py createsuperuser
 
 <br /><br />
 
-## Load Data (to use the fixtures)
-
-gitpod /workspace/ecommerce $ python3 manage.py loaddata categories
-   <!-- Installed 9 object(s) from 1 fixture(s) -->
-gitpod /workspace/ecommerce $ python3 manage.py loaddata products
-   <!-- Installed 172 object(s) from 1 fixture(s) -->
-   <!-- 172 products fully loaded with images, categories, names, descriptions, prices, ratings -->
-
 to confirm:
 
 python3 manage.py runserver
@@ -420,50 +412,11 @@ def checkout(request):<br />
 Django - Queries = https://docs.djangoproject.com/en/3.2/topics/db/queries/
 <br /><br />
 
-### Bootstrap Elements
-    text-decoration-none
-
-    p-2
-
-    mt-2
-
-    badge
-
-    badge-white
-
-    rounded-0
-
-    border
-
-    border-dark
-
-    "my-0"     = margin-less
-
-<br /><br />
-
-### Non-Bootstrap Elements which work with bootstrap
-
-    category-badge
-
-    text-black
-
-    .btt-button
-
-    .btt-link
-
-<br /><br />
 
 ## ERROR Definitions
 
 Pascal case -- or PascalCase -- is a programming naming convention where the first letter of each compound word in a variable is capitalized. No spaces used, including _underscores.
 <br />
-example:  class StripeWH_Handler: 
-<br />
-changed to:  class StripeWHHandler:   is fine, but I am changing it to make it more obvious of what it is exactly.
-<br />
-changed to:  class StripeWebHookHandler: 
-<br />
-in webhooks.py, import StripeWH_Handler, changed to StripeWebHookHandler, changed back
 
 ## Make Migrations
 
@@ -475,6 +428,16 @@ python3 manage.py migrate<br />
 <br /><br />
 
 profiles > apps.py = django.db.models.BigAutoField
+
+
+## Load Data (to use the fixtures)
+
+python3 manage.py loaddata categories
+   <!-- Installed 9 object(s) from 1 fixture(s) -->
+python3 manage.py loaddata products
+   <!-- Installed 172 object(s) from 1 fixture(s) -->
+   <!-- 172 products fully loaded with images, categories, names, descriptions, prices, ratings -->
+
 
 ### SECURITY FEATURES
 
@@ -494,7 +457,6 @@ then in GitPod,
 pip3 install dj_database_url
 pip3 install psycopg2-binary
 pip3 freeze > requirements.txt
-
 
 
 ## Acknowledgements and Credits
